@@ -1,0 +1,118 @@
+.jema-app{
+	width: 100%;
+}
+.dashboard{
+	width: 100%;
+}
+.dashboard > .left{
+	position: absolute;
+	width: 30%;
+	height: 100%;
+	box-sizing: border-box;
+	border-top: 1px solid #eee;
+	border-right: 1px solid #eee;
+}
+.dashboard > .right{
+	position: absolute;
+	width: 70%;
+	height: 100%;
+	left: 30%;
+	box-sizing: border-box;
+	padding-left: 4em;
+	padding-right: 4em;
+	border-top: 1px solid #eee;
+}
+
+.online-users{
+	margin-left: 0px;
+	padding-left: 0;
+	list-style-type: none;
+	/*position: fixed;
+	left: 0;
+	top: 55px;
+	bottom: 0;
+	width: 30%; */
+}
+.online-users > li {
+	padding: 10px;
+	padding-left: 60px;
+	border-bottom: 1px solid #eee;
+	font-size: 17px;
+	font-weight: bold;
+	background-image: url('../img/list-icon.png');
+	background-repeat: no-repeat;
+	background-size: 15px;
+	background-position: 35px;
+	color: #555;
+	cursor: pointer;
+}
+.online-users > li:hover{
+	background-color: #eee;
+}
+
+.chat-pan{
+	list-style-type: none;
+	padding-left: 0;
+	margin-left: 0;
+	height: 25em;
+	overflow: auto;
+}
+.chat-pan > li {
+	border-bottom: 1px solid #eee;
+	margin-bottom: 2px;
+}
+.chat-pan > li > b{
+	font-size: 18px;
+	color: #000;
+}
+.chat-pan > li > p{
+	display: block;
+	color: #444;
+}
+
+.mobile-users {
+	display:none;
+}
+
+@media screen and (max-width: 377px){
+	.dashboard > .left{
+		display: none;
+	}
+	.dashboard > .right{
+		padding-left: 0;
+		padding-right: 0;
+		left: 0;
+		width: 100%;
+	}
+	.chat-pan {
+		padding-left: 10px;
+	}
+	.mobile-users {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 2000;
+	padding-left: 0;
+	background: rgba(0,0,0, 0.3);
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: block;
+}
+.mobile-users > ul{
+	list-style-type: none;
+	padding-left: 0;
+}
+.mobile-users > ul > li{
+	background: #fff;
+	font-size: 17px;
+	padding: 10px;
+	padding-left: 45px;
+	background-image: url('../img/list-icon.png');
+	background-repeat: no-repeat;
+	background-size: 15px;
+	background-position: 15px;
+	border-bottom: 1px solid #eee;
+}
+}
