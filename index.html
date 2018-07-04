@@ -4,6 +4,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>: : Jema</title>
 		<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/scrollbar/jquery.mCustomScrollbar.min.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<style type="text/css">
 			.hide{display: none;}
@@ -67,7 +68,19 @@
 					
 					
 				<div class="right">
-					<ul class="chat-pan">
+					<ul class="chat-pan mCustomScrollbar mCS-autoHide" data-mcs-theme="dark">
+						<li>
+							<b>User_name</b>
+							<p>Ipsum lorem et inlar ret sectarat ilupsum</p>
+						</li>
+						<li>
+							<b>User_name</b>
+							<p>Ipsum lorem et inlar ret sectarat ilupsum</p>
+						</li>
+						<li>
+							<b>User_name</b>
+							<p>Ipsum lorem et inlar ret sectarat ilupsum</p>
+						</li>
 						<li>
 							<b>User_name</b>
 							<p>Ipsum lorem et inlar ret sectarat ilupsum</p>
@@ -108,6 +121,7 @@
 		</div>
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="assets/scrollbar/jquery.mCustomScrollbar.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
 				$('#showUsers').click(function(){
@@ -118,5 +132,12 @@
 				});
 			});
 		</script>
+		<script>
+    (function($){
+        $(window).on("load",function(){
+            $(".chat-pan").mCustomScrollbar();
+        });
+    })(jQuery);
+</script>
 	</body>
 </html>
